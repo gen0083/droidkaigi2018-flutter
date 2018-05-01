@@ -35,12 +35,12 @@ class Speaker {
     var isTopSpeaker = json['isTopSpeaker'];
     var fullName = json['fullName'];
 
-    var sessions = [];
+    List<Session> sessions = [];
     for (var sessionId in json['sessions']) {
       sessions.add(sessionMap[sessionId]);
     }
 
-    var links = [];
+    List<Link> links = [];
     for (var link in json['links']) {
       links.add(Link.fromJson(link));
     }

@@ -50,7 +50,7 @@ class Session {
     var endsAt = DateTime.parse(json['endsAt']);
     var isServiceSession = json['isServiceSession'];
     var isPlenumSession = json['isPlenumSession'];
-    var speakers = [];
+    List<Speaker> speakers = [];
     var room = roomMap[json['roomId']];
 
     DurationType durationType;
